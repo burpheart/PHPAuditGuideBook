@@ -3,12 +3,12 @@
 * [PHP代码审计指南](README.md)
 * [序言](xu-yan.md)
 
-## PHP审计准备
+## PHP审计基础
 
-* [⚒ 工具准备](php-shen-ji-zhun-bei/gong-ju-zhun-bei.md)
-* [VS CODE审计技巧](php-shen-ji-zhun-bei/page-6.md)
-* [Page 5](php-shen-ji-zhun-bei/page-5.md)
-* [Page 1](php-shen-ji-zhun-bei/page-1.md)
+* [⚒ 工具准备](php-shen-ji-ji-chu/gong-ju-zhun-bei.md)
+* [VS CODE审计技巧](php-shen-ji-ji-chu/vs-code-shen-ji-ji-qiao.md)
+* [PHP审计流程](php-shen-ji-ji-chu/php-shen-ji-liu-cheng.md)
+* [用户可控输入速查表](php-shen-ji-ji-chu/yong-hu-ke-kong-shu-ru-su-cha-biao.md)
 
 ***
 
@@ -19,11 +19,6 @@
 * [Page 2](php-chang-jian-kuang-jia/page-2.md)
 * [Page 9](php-chang-jian-kuang-jia/page-9.md)
 * [Page 10](php-chang-jian-kuang-jia/page-10.md)
-
-## PHP审计流程
-
-* [Page 3](php-shen-ji-liu-cheng/page-3.md)
-* [Page 4](php-shen-ji-liu-cheng/page-4.md)
 
 ## PHP常见漏洞
 
