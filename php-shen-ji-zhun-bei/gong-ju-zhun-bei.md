@@ -18,7 +18,7 @@ Visual Studio Code 是一个开源免费的代码编辑器 本指南中使用该
 
 #### 插件
 
-VS CODE 扩展商店拥有大量实用的扩展插件. 本文使用**PHP Intelephense**扩展用于辅助审计![](<../.gitbook/assets/图片 (2).png>)
+VS CODE 扩展商店拥有大量实用的扩展插件. 本文使用**PHP Intelephense**扩展用于辅助审计![](<../.gitbook/assets/图片 (2) (1).png>)
 
 点击左侧工具条扩展按钮安装图示进行安装
 
