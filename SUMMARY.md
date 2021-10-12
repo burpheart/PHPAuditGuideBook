@@ -10,7 +10,7 @@
 * [PHP审计流程](php-shen-ji-ji-chu/php-shen-ji-liu-cheng.md)
 * [用户可控输入速查表](php-shen-ji-ji-chu/yong-hu-ke-kong-shu-ru-su-cha-biao.md)
 * [脆弱函数速查表](php-shen-ji-ji-chu/cui-ruo-han-shu-su-cha-biao.md)
-* [PHP原生过滤函数](php-shen-ji-ji-chu/php-yuan-sheng-guo-lv-han-shu.md)
+* [PHP原生过滤方法](php-shen-ji-ji-chu/php-yuan-sheng-guo-lv-han-shu.md)
 
 ## PHP常见框架
 
