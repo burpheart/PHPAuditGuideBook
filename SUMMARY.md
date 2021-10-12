@@ -6,7 +6,7 @@
 ## PHP审计准备
 
 * [⚒ 工具准备](php-shen-ji-zhun-bei/gong-ju-zhun-bei.md)
-* [VS CODE审计技巧](php-shen-ji-zhun-bei/vs-code-shen-ji-ji-qiao.md)
+* [VS CODE审计技巧](php-shen-ji-zhun-bei/page-6.md)
 * [Page 5](php-shen-ji-zhun-bei/page-5.md)
 * [Page 1](php-shen-ji-zhun-bei/page-1.md)
 
