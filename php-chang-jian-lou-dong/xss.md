@@ -47,5 +47,9 @@ echo 'Hello '.$_GET['name'].'!';
 
 
 
-#### DOM型 XSS 只与浏览器前端DOM渲染有关 不做讲述
+#### DOM型 XSS
+
+####  DOM型 XSS 只与浏览器前端DOM渲染有关 不做赘述
+
+
 

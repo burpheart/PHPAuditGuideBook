@@ -45,5 +45,15 @@ system($command); //system函数特性 执行结果会自动打印
 | &&       | 按照从左到右顺序执行命令 只有执行成功才执行后面的语句 |                    |
 | **\|\|** | 按照从左到右顺序执行命令 只有执行失败才执行后面的语句 |                    |
 
+**一些常见的可以执行系统命令的函数/语法**
 
+| 函数/语法               | 描述                                  | 例子                                                         |
+| ------------------- | ----------------------------------- | ---------------------------------------------------------- |
+| system              | 执行命令并输出结果                           | system('id');                                              |
+| exec                | 执行命令 只可获取最后一行结果                     | exec('id',$a); print_r($a);                                |
+| passthru            | 同 system                            | passthru('id');                                            |
+| shell_exec \` (反引号) | 执行命令并返回结果                           | $a=shell_exec('id');print_r($a); $a=\`id\`;print_r($a);    |
+| popen               | 执行命令并建立管道 返回一个指针 使用fread等函数操作指针进行读写 | $a=popen("id", "r"); echo fread($a, 2096);                 |
+| proc_open           | 同 popen (进程控制功能更强大)                 | [见PHP手册](https://www.php.net/manual/zh/function.proc-open) |
+| pcntl_exec          | 执行命令 只返回是否发生错误                      | pcntl_exec('id');                                          |
 
