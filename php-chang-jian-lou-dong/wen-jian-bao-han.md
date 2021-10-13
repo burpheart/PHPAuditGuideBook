@@ -33,7 +33,7 @@ include(“pages/$file”);
 
 如 include(“pages/$file.tpl”);  
 
-架设用户不能上传php文件 但可上传tpl文件
+假设用户不能上传php文件 但可上传tpl文件
 
 可以上传一个tpl文件 构造路径包含tpl文件 执行php代码
 
