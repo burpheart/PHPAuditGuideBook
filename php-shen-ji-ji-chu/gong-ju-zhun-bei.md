@@ -4,6 +4,10 @@ description: 工欲善其事,必先利其器. 如果想要高效快速地入门P
 
 # ⚒ 工具准备
 
+{% hint style="info" %}
+本指南主要面向手工审计方向 自动化审计工具不考虑在内
+{% endhint %}
+
 ## Visual Studio Code
 
 #### 简介

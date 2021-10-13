@@ -12,15 +12,23 @@
 * [PHP敏感函数速查表](php-shen-ji-ji-chu/cui-ruo-han-shu-su-cha-biao.md)
 * [PHP原生过滤方法](php-shen-ji-ji-chu/php-yuan-sheng-guo-lv-han-shu.md)
 
+## PHP常见漏洞
+
+* [命令注入](php-chang-jian-lou-dong/page-11.md)
+* [代码注入](php-chang-jian-lou-dong/dai-ma-zhu-ru.md)
+* [文件包含](php-chang-jian-lou-dong/wen-jian-bao-han.md)
+* [SQL注入](php-chang-jian-lou-dong/sql-zhu-ru.md)
+* [文件操作](php-chang-jian-lou-dong/wen-jian-cao-zuo.md)
+* [XSS](php-chang-jian-lou-dong/xss.md)
+* [SSRF](php-chang-jian-lou-dong/ssrf.md)
+* [CSRF](php-chang-jian-lou-dong/csrf.md)
+* [XXE](php-chang-jian-lou-dong/xxe.md)
+* [Page 4](php-chang-jian-lou-dong/page-4.md)
+* [Page 5](php-chang-jian-lou-dong/page-5.md)
+
 ## PHP常见框架
 
 * [Page 2](php-chang-jian-kuang-jia/page-2.md)
-* [Page 9](php-chang-jian-kuang-jia/page-9.md)
-* [Page 10](php-chang-jian-kuang-jia/page-10.md)
-
-## PHP常见漏洞
-
-* [Page 11](php-chang-jian-lou-dong/page-11.md)
 
 ## PHP审计实例
 
