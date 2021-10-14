@@ -12,9 +12,19 @@
 
 _来自 <_[_https://www.php.net/manual/zh/function.escapeshellcmd.php_](https://www.php.net/manual/zh/function.escapeshellcmd.php)_>_
 
-**addslashes** _在单引号（'）、双引号（"）、反斜线（\）与 NUL前加上反斜线_ **可用于防止SQL注入**
+__
 
-注意: **经过addslashes 处理后的字符串不可直接用于sql查询拼接 需要使用引号包裹后拼接到sql语句中 否则仍可导致sql注入**
+**addslashes **_在单引号（'）、双引号（"）、反斜线（\）与 NUL前加上反斜线_ **可用于防止SQL注入**
+
+**mysqli::real_escape_string mysqli::escape_string mysqli_real_escape_string mysql_real_escape_string SQLite3::escapeString **
+
+**以上函数会在\x00(NULL), \n, \r, , ', " 和 \x1a (CTRL-Z)**_**前加上反斜线**_**  并考虑了当前数据库连接字符集进行处理**
+
+注意: <mark style="color:red;"></mark><mark style="color:red;">**经过以上函数处理后的字符串不可直接用于sql查询拼接 需要使用引号包裹后拼接到sql语句中 否则仍可导致sql注入 **</mark>
+
+**PDO::quote 转义特殊字符 并添加引号**
+
+**PDO::prepare 预处理SQL语句 有效防止SQL注入 (推荐)**
 
 **htmlspecialchars 和 htmlentities** 将特殊字符转义成html实体 可用于防止XSS
 
