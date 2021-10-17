@@ -23,8 +23,8 @@
 * [SSRF](php-chang-jian-lou-dong/ssrf.md)
 * [CSRF](php-chang-jian-lou-dong/csrf.md)
 * [XXE](php-chang-jian-lou-dong/xxe.md)
-* [Page 4](php-chang-jian-lou-dong/page-4.md)
-* [Page 5](php-chang-jian-lou-dong/page-5.md)
+* [反序列化](php-chang-jian-lou-dong/fan-xu-lie-hua.md)
+* [LDAP注入](php-chang-jian-lou-dong/ldap-zhu-ru.md)
 
 ## PHP常见框架
 
