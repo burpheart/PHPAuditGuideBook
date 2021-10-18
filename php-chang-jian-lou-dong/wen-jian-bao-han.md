@@ -1,12 +1,10 @@
 # 文件包含
 
-将远程/本地作为PHP文件包含入当前执行的PHP源码并作为PHP代码执行
+将远程/本地文件 包含入当前页面的PHP代码并执行 详细内核原理见[PHP7内核剖析](https://www.kancloud.cn/nickbai/php7/363301)
 
 ## 例子
 
 开发人员希望自己写的页面实现更加灵活的加载
-
-
 
 ```
 <?php
@@ -16,6 +14,15 @@ include(“pages/$file”);
 ```
 
 正常输入 ?page=login.php
+
+```
+<?php
+$file = $_GET['page']; 
+/*
+pages/login.php 文件内容
+*/
+?>
+```
 
 服务器包含并执行pages目录下的login.php
 

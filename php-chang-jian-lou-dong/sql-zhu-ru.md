@@ -1,6 +1,6 @@
 # SQL注入
 
-将处理不当的用户输入拼接到数据库将要执行的SQL语句中 导致攻击者可以修改原有执行的SQL语句
+将用户输入拼接到数据库将要执行的SQL语句中 导致攻击者可以修改原有执行的SQL语句
 
 ### 例子
 
@@ -52,6 +52,8 @@ SELECT id, name FROM users WHERE id=123 UNION SELECT name,password FROM users;
 注意: <mark style="color:red;"></mark><mark style="color:red;">**经过以上函数处理后的字符串不可直接用于sql查询拼接 需要使用引号包裹后拼接到sql语句中 否则仍可导致sql注入 **</mark>
 
 <mark style="color:red;">**例如 上文中的例子 攻击者输入并没有使用到引号反斜线 逗号可使用其他方法绕过 仍可构成SQL注入**</mark>
+
+### 防护方法
 
 ```
 

@@ -1,5 +1,5 @@
 ---
-description: 让用户浏览器执行到攻击者指定的JS脚本代码
+description: 跨站脚本(攻击) 让用户浏览器执行到攻击者指定的JS脚本代码
 ---
 
 # XSS
@@ -49,7 +49,35 @@ echo 'Hello '.$_GET['name'].'!';
 
 #### DOM型 XSS
 
+纯dom
+
+储存(反射)dom
+
 ####  DOM型 XSS 只与浏览器前端DOM渲染有关 不做赘述
+
+### 前端外部文件引用
+
+攻击者修改前端引用的文件链接 引用外部网站文件
+
+常见于用户头像 文章/评论图片等
+
+被害者访问到攻击者个人页面 文章 评论 聊天内容时会访问远程图片文件
+
+这可能会使攻击者获取到访问者的ip 浏览器 系统等信息
+
+也可以绕过内容审查 在审查通过后动态替换文件内容(hsbc广告等信息)
+
+解决方法:正则匹配限制url域名
+
+### 防护
+
+后端过滤
+
+服务端返回HTTP头 添加内容安全策略 [content-security-policy](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Content-Security-Policy) 头
+
+正确设置安全策略可以有效减少**未知XSS/html外部文件引用**漏洞产生的危害
+
+COOKIES添加Httponly属性 防止使用js读取用户cookies (js发起表单仍可携带cookies)
 
 
 
