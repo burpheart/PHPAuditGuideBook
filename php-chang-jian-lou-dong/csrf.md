@@ -8,7 +8,7 @@ description: 跨站请求伪造
 
 攻击者使被害者的浏览器在用户不知情的情况下发起目标网站表单请求 这些表单常常带有目标网站的用户cookies 以用户在目标网站的身份进行操作 (不能获取)
 
-检查鉴权后的操作是否添加token/reffer防护
+检查鉴权后的操作是否添加token/Referrer防护
 
 ### JSONP请求
 
@@ -20,11 +20,11 @@ description: 跨站请求伪造
 
 ### AJAX请求
 
-一种服务器动态加载的技术
+一种使用js动态加载数据的技术
 
-浏览器会先发送一个HEAD请求 获取Access-Control-Allow-Origin等Access-Control安全策略
+浏览器会先发送一个HEAD请求 获取HTTP头 检查Access-Control-Allow-Origin等Access-Control安全策略
 
-决定是否发起带有目标域浏览器cookies的请求 如果没有头或不符合策略则拒绝请求
+这会决定是否发起带有目标域浏览器cookies的请求 如果没有头或不符合策略则拒绝请求
 
 审计时检查 HTTP是否错误地添加"Access-Control-Allow-Origin:\*" 头
 
