@@ -72,6 +72,7 @@ $zip->close();//关闭zip
 | symlink                                                          | 创建符号链接(软链接)                                                                  | symlink($target, $link);                                                                               |
 | tmpfile                                                          | 创建一个临时文件 (在临时目录存放 随机文件名 返回句柄)                                                | $temp = tmpfile(); fwrite($temp, "123456"); fclose($temp);                                             |
 | <p>request()->file()->move()</p><p>request()->file()->file()</p> | ****[**Thinkphp 文件上传**](https://www.kancloud.cn/manual/thinkphp5/155159)**** | <p>$file = request()->file($name);</p><p>$file->move($filepath);</p>                                   |
+| extractTo                                                        | 解压zip 到目录                                                                    |                                                                                                        |
 
 
 
