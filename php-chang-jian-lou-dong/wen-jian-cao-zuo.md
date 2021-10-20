@@ -36,7 +36,23 @@ move_uploaded_file(临时上传文件路径,目标文件路径);//移动临时�
 
 **注:**只要PHP收到POST上传文件表单 哪怕php页面一行代码没有 都会将上传文件保存到临时目录 在请求结束后如果临时文件没有被移走就会被自动删除 这里可能会有个条件竞争问题
 
+### 文件解压
 
+```
+$zip = new \ZipArchive;
+$zip->open('test_new.zip', \ZipArchive::CREATE) //打开一个zip文件
+$zip->addFile('test.txt'); //添加压缩文件
+$zip->addEmptyDir('newdir');//添加空目录
+$zip->addFromString('new.txt', '文本');//从字符串添加文件到压缩包
+$zip->extractTo('upload');//将压缩包文件解压到upload目录下
+$zip->close();//关闭zip
+```
+
+注:ZipArchive扩展在windows平台 php版本>5.6时默认安装. linux及windows其他版本需要手动编译安装.
+
+审计时重点查找 extractTo方法
+
+判断解压目录是否在web目录下 是否检查压缩包内文件类型 如果不在web目录下也可以使用.. 进行目录穿越控制上传目录 到web目录下 或者在权限足够的情况下写入文件到系统关键目录 (自启动 定时任务 ssh公钥 覆盖shadow 等)
 
 
 
