@@ -25,6 +25,7 @@
 * [XXE](php-chang-jian-lou-dong/xxe.md)
 * [反序列化](php-chang-jian-lou-dong/fan-xu-lie-hua.md)
 * [LDAP注入](php-chang-jian-lou-dong/ldap-zhu-ru.md)
+* [其他漏洞](php-chang-jian-lou-dong/qi-ta-lou-dong.md)
 
 ## PHP常见框架
 
