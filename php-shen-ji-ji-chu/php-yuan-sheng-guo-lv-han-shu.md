@@ -1,4 +1,4 @@
-# PHP原生过滤方法
+# 🩹 PHP原生过滤方法
 
 ### **过滤函数**
 
@@ -16,7 +16,7 @@ __
 
 **addslashes **_在单引号（'）、双引号（"）、反斜线（\）与 NUL前加上反斜线_ **可用于防止SQL注入**
 
-**mysqli::real_escape_string mysqli::escape_string mysqli_real_escape_string mysql_real_escape_string SQLite3::escapeString **
+**mysqli::real\_escape\_string mysqli::escape\_string mysqli\_real\_escape\_string mysql\_real\_escape\_string SQLite3::escapeString **
 
 **以上函数会在\x00(NULL), \n, \r, , ', " 和 \x1a (CTRL-Z)**_**前加上反斜线**_**  并考虑了当前数据库连接字符集进行处理**
 
