@@ -1,4 +1,4 @@
-# 参考
+# 🔗 参考
 
 \[1] PHP手册 [https://www.php.net/manual/](https://www.php.net/manual/)
 

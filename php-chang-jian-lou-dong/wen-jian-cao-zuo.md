@@ -34,7 +34,7 @@ move_uploaded_file(临时上传文件路径,目标文件路径);//移动临时�
 
 "pictures"为表单中的name "tmp\_name"为固定变量名(临时文件名)
 
-![](<../.gitbook/assets/图片 (3).png>)
+![](<../.gitbook/assets/图片 (3) (1).png>)
 
 Gynvael Coldwind 《PHP\_LFI\_rfc1867\_temporary\_files》 2011.3
 
