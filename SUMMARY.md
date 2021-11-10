@@ -1,6 +1,6 @@
 # Table of contents
 
-* [PHP代码审计指南](README.md)
+* [PHP代码审计入门指南](README.md)
 * [序言](xu-yan.md)
 
 ## PHP审计基础
