@@ -19,7 +19,7 @@ include(“pages/$file”);
 <?php
 $file = $_GET['page']; 
 /*
-pages/login.php 文件内容
+pages/login.php 文件代码被包含执行
 */
 ?>
 ```
@@ -32,7 +32,7 @@ pages/login.php 文件内容
 
 该漏洞通常需要参数后半部分可控或者参数完全可控才存在
 
-注意:当代码运行环境 php版本小于5.3.4且 php的magic\_quotes\_gpc为OFF状态时 参数在中间拼接也可利用  (CVE-2006-7243)(这是个PHP本身的问题 不是代码的问题 解决方法: 升级PHP)
+注意:当代码运行环境 php版本小于5.3.4且 php的magic\_quotes\_gpc为OFF状态时 参数在中间拼接也可利用  (**CVE-2006-7243**)(这是个PHP本身的问题 不是代码的问题 解决方法: 升级PHP)
 
 参数在中间拼接时 如果用户仍可向拼接出的文件进行写入则可以利用
 
@@ -50,23 +50,11 @@ pages/login.php 文件内容
 
 **包含日志** Apache nginx 等web服务器访问日志 SSH FTP 等登陆错误日志 PHP框架日志&#x20;
 
-**包含 /proc/self/environ** (必须是有proc伪文件系统的操作系统 比如UNIX LINUX) 当前进程的环境变量(PHP会将HTTP头 请求URI等信息写入当前进程环境变量)
+**包含 /proc/self/environ** (必须是有proc伪文件系统的操作系统 比如LINUX) 当前进程的环境变量(PHP会将HTTP头 请求URI等信息写入当前进程环境变量)
 
 **包含 session文件 ** (通常在临时目录下 (linux /tmp/ ) sess\_会话ID文件)
 
 **PHP间接或直接创建的其他文件 **比如数据库文件 缓存文件 应用日志等
-
-
-
-
-
-
-
-
-
-Gynvael Coldwind 《PHP\_LFI\_rfc1867\_temporary\_files》 2011.3
-
-##
 
 | 函数/语法结构       | 描述                               | 例子                                |
 | ------------- | -------------------------------- | --------------------------------- |
