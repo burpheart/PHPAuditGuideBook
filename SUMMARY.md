@@ -42,7 +42,7 @@
 
 ## 附录
 
-* [Page 3](fu-lu/page-3.md)
+* [PHP弱类型](fu-lu/php-ruo-lei-xing.md)
 
 ***
 
