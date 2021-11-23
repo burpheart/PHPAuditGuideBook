@@ -1,0 +1,995 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>🧬 PHP敏感函数速查表 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="php-yuan-sheng-guo-lv-han-shu.html" />
+    
+    
+    <link rel="prev" href="yong-hu-ke-kong-shu-ru-su-cha-biao.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    PHP代码审计入门指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../xu-yan.html">
+            
+                <a href="../xu-yan.html">
+            
+                    
+                    序言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">PHP审计基础</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="gong-ju-zhun-bei.html">
+            
+                <a href="gong-ju-zhun-bei.html">
+            
+                    
+                    ⚒ 工具准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="vs-code-shen-ji-ji-qiao.html">
+            
+                <a href="vs-code-shen-ji-ji-qiao.html">
+            
+                    
+                    VS CODE 常用快捷键
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="php-shen-ji-liu-cheng.html">
+            
+                <a href="php-shen-ji-liu-cheng.html">
+            
+                    
+                    PHP代码审计思路
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="yong-hu-ke-kong-shu-ru-su-cha-biao.html">
+            
+                <a href="yong-hu-ke-kong-shu-ru-su-cha-biao.html">
+            
+                    
+                    💉 PHP用户可控输入速查表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.5" data-path="cui-ruo-han-shu-su-cha-biao.html">
+            
+                <a href="cui-ruo-han-shu-su-cha-biao.html">
+            
+                    
+                    🧬 PHP敏感函数速查表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="php-yuan-sheng-guo-lv-han-shu.html">
+            
+                <a href="php-yuan-sheng-guo-lv-han-shu.html">
+            
+                    
+                    🩹 PHP原生过滤方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="php-dong-tai-tiao-shi-xdebug-an-zhuang-pei-zhi.html">
+            
+                <a href="php-dong-tai-tiao-shi-xdebug-an-zhuang-pei-zhi.html">
+            
+                    
+                    PHP动态调试-Xdebug安装配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">PHP常见漏洞</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../php-chang-jian-lou-dong/page-11.html">
+            
+                <a href="../php-chang-jian-lou-dong/page-11.html">
+            
+                    
+                    命令注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../php-chang-jian-lou-dong/dai-ma-zhu-ru.html">
+            
+                <a href="../php-chang-jian-lou-dong/dai-ma-zhu-ru.html">
+            
+                    
+                    代码注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../php-chang-jian-lou-dong/wen-jian-bao-han.html">
+            
+                <a href="../php-chang-jian-lou-dong/wen-jian-bao-han.html">
+            
+                    
+                    文件包含
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../php-chang-jian-lou-dong/sql-zhu-ru.html">
+            
+                <a href="../php-chang-jian-lou-dong/sql-zhu-ru.html">
+            
+                    
+                    SQL注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../php-chang-jian-lou-dong/wen-jian-cao-zuo.html">
+            
+                <a href="../php-chang-jian-lou-dong/wen-jian-cao-zuo.html">
+            
+                    
+                    文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../php-chang-jian-lou-dong/xss.html">
+            
+                <a href="../php-chang-jian-lou-dong/xss.html">
+            
+                    
+                    XSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../php-chang-jian-lou-dong/ssrf.html">
+            
+                <a href="../php-chang-jian-lou-dong/ssrf.html">
+            
+                    
+                    SSRF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="../php-chang-jian-lou-dong/csrf.html">
+            
+                <a href="../php-chang-jian-lou-dong/csrf.html">
+            
+                    
+                    CSRF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="../php-chang-jian-lou-dong/xxe.html">
+            
+                <a href="../php-chang-jian-lou-dong/xxe.html">
+            
+                    
+                    XXE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="../php-chang-jian-lou-dong/fan-xu-lie-hua.html">
+            
+                <a href="../php-chang-jian-lou-dong/fan-xu-lie-hua.html">
+            
+                    
+                    反序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="../php-chang-jian-lou-dong/ldap-zhu-ru.html">
+            
+                <a href="../php-chang-jian-lou-dong/ldap-zhu-ru.html">
+            
+                    
+                    LDAP注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12" data-path="../php-chang-jian-lou-dong/qi-ta-lou-dong.html">
+            
+                <a href="../php-chang-jian-lou-dong/qi-ta-lou-dong.html">
+            
+                    
+                    其他漏洞
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">PHP常见框架</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../php-chang-jian-kuang-jia/page-2.html">
+            
+                <a href="../php-chang-jian-kuang-jia/page-2.html">
+            
+                    
+                    Thinkphp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../php-chang-jian-kuang-jia/laravel.html">
+            
+                <a href="../php-chang-jian-kuang-jia/laravel.html">
+            
+                    
+                    Laravel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../php-chang-jian-kuang-jia/codeigniter.html">
+            
+                <a href="../php-chang-jian-kuang-jia/codeigniter.html">
+            
+                    
+                    Codeigniter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../php-chang-jian-kuang-jia/yii.html">
+            
+                <a href="../php-chang-jian-kuang-jia/yii.html">
+            
+                    
+                    Yii
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../php-chang-jian-kuang-jia/cakephp.html">
+            
+                <a href="../php-chang-jian-kuang-jia/cakephp.html">
+            
+                    
+                    Cakephp
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">PHP审计实例</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../php-shen-ji-shi-li/page-12.html">
+            
+                <a href="../php-shen-ji-shi-li/page-12.html">
+            
+                    
+                    -
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">附录</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../fu-lu/php-ruo-lei-xing.html">
+            
+                <a href="../fu-lu/php-ruo-lei-xing.html">
+            
+                    
+                    PHP弱类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../zong-jie.html">
+            
+                <a href="../zong-jie.html">
+            
+                    
+                    🎉 总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../can-kao.html">
+            
+                <a href="../can-kao.html">
+            
+                    
+                    🔗 参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >🧬 PHP敏感函数速查表</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x1F9EC;-php&#x654F;&#x611F;&#x51FD;&#x6570;&#x901F;&#x67E5;&#x8868;">&#x1F9EC; PHP&#x654F;&#x611F;&#x51FD;&#x6570;&#x901F;&#x67E5;&#x8868;</h1>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>PHP&#x4E00;&#x4E9B;&#x5BB9;&#x6613;&#x51FA;&#x73B0;&#x5B89;&#x5168;&#x95EE;&#x9898;&#x7684;&#x51FD;&#x6570;&#x65B9;&#x6CD5;</p>
+</div></div></p>
+<h2 id="&#x547D;&#x4EE4;&#x6267;&#x884C;">&#x547D;&#x4EE4;&#x6267;&#x884C;</h2>
+<p>&#x4E00;&#x4E9B;&#x5E38;&#x89C1;&#x7684;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x7CFB;&#x7EDF;&#x547D;&#x4EE4;&#x7684;&#x51FD;&#x6570;/&#x8BED;&#x6CD5;</p>
+<table>
+<thead>
+<tr>
+<th>&#x51FD;&#x6570;/&#x8BED;&#x6CD5;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>&#x4F8B;&#x5B50;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>system</td>
+<td>&#x6267;&#x884C;&#x547D;&#x4EE4;&#x5E76;&#x8F93;&#x51FA;&#x7ED3;&#x679C;</td>
+<td>system(&apos;id&apos;);</td>
+</tr>
+<tr>
+<td>exec</td>
+<td>&#x6267;&#x884C;&#x547D;&#x4EE4; &#x53EA;&#x53EF;&#x83B7;&#x53D6;&#x6700;&#x540E;&#x4E00;&#x884C;&#x7ED3;&#x679C;</td>
+<td>exec(&apos;id&apos;,$a); print_r($a);</td>
+</tr>
+<tr>
+<td>passthru</td>
+<td>&#x540C; system</td>
+<td>passthru(&apos;id&apos;);</td>
+</tr>
+<tr>
+<td>shell_exec ` (&#x53CD;&#x5F15;&#x53F7;)</td>
+<td>&#x6267;&#x884C;&#x547D;&#x4EE4;&#x5E76;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;</td>
+<td>$a=shell_exec(&apos;id&apos;);print_r($a); $a=`id`;print_r($a);</td>
+</tr>
+<tr>
+<td>popen</td>
+<td>&#x6267;&#x884C;&#x547D;&#x4EE4;&#x5E76;&#x5EFA;&#x7ACB;&#x7BA1;&#x9053; &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6307;&#x9488; &#x4F7F;&#x7528;fread&#x7B49;&#x51FD;&#x6570;&#x64CD;&#x4F5C;&#x6307;&#x9488;&#x8FDB;&#x884C;&#x8BFB;&#x5199;</td>
+<td>$a=popen(&quot;id&quot;, &quot;r&quot;); echo fread($a, 2096);</td>
+</tr>
+<tr>
+<td>proc_open</td>
+<td>&#x540C; popen (&#x8FDB;&#x7A0B;&#x63A7;&#x5236;&#x529F;&#x80FD;&#x66F4;&#x5F3A;&#x5927;)</td>
+<td><a href="https://www.php.net/manual/zh/function.proc-open" target="_blank">&#x89C1;PHP&#x624B;&#x518C;</a></td>
+</tr>
+<tr>
+<td>pcntl_exec</td>
+<td>&#x6267;&#x884C;&#x547D;&#x4EE4; &#x53EA;&#x8FD4;&#x56DE;&#x662F;&#x5426;&#x53D1;&#x751F;&#x9519;&#x8BEF;</td>
+<td>pcntl_exec(&apos;id&apos;);</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x4EE3;&#x7801;&#x6CE8;&#x5165;&#x6587;&#x4EF6;&#x5305;&#x542B;">&#x4EE3;&#x7801;&#x6CE8;&#x5165;/&#x6587;&#x4EF6;&#x5305;&#x542B;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x51FD;&#x6570;/&#x8BED;&#x6CD5;&#x7ED3;&#x6784;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>&#x4F8B;&#x5B50;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>eval</td>
+<td>&#x5C06;&#x4F20;&#x5165;&#x7684;&#x53C2;&#x6570;&#x5185;&#x5BB9;&#x4F5C;&#x4E3A;PHP&#x4EE3;&#x7801;&#x6267;&#x884C; eval &#x4E0D;&#x662F;&#x51FD;&#x6570; &#x662F;&#x4E00;&#x79CD;&#x8BED;&#x6CD5;&#x7ED3;&#x6784; &#x4E0D;&#x80FD;&#x5F53;&#x505A;&#x51FD;&#x6570;&#x52A8;&#x6001;&#x8C03;&#x7528;</td>
+<td>eval(&apos;phpinfo();&apos;);</td>
+</tr>
+<tr>
+<td>assert</td>
+<td>&#x5C06;&#x4F20;&#x5165;&#x7684;&#x53C2;&#x6570;&#x5185;&#x5BB9;&#x4F5C;&#x4E3A;PHP&#x4EE3;&#x7801;&#x6267;&#x884C; &#x7248;&#x672C;&#x5728;PHP7&#x4EE5;&#x4E0B;&#x662F;&#x51FD;&#x6570; PHP7&#x53CA;&#x4EE5;&#x4E0A;&#x4E3A;&#x8BED;&#x6CD5;&#x7ED3;&#x6784;</td>
+<td>assert(&apos;phpinfo();&apos;);</td>
+</tr>
+<tr>
+<td>preg_replace</td>
+<td>&#x5F53;preg_replace&#x4F7F;&#x7528;/e&#x4FEE;&#x9970;&#x7B26;&#x4E14;&#x539F;&#x5B57;&#x7B26;&#x4E32;&#x53EF;&#x63A7;&#x65F6;&#x65F6; &#x6709;&#x53EF;&#x80FD;&#x6267;&#x884C;php&#x4EE3;&#x7801;</td>
+<td>echo preg_replace(&quot;/e&quot;,&quot;{${PHPINFO()}}&quot;,&quot;123&quot;);</td>
+</tr>
+<tr>
+<td>call_user_func</td>
+<td>&#x628A;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x4F5C;&#x4E3A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x8C03;&#x7528; &#x9700;&#x8981;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#x90FD;&#x5B8C;&#x5168;&#x53EF;&#x63A7;&#x624D;&#x53EF;&#x5229;&#x7528; &#x53EA;&#x80FD;&#x4F20;&#x5165;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x8C03;&#x7528;</td>
+<td>call_user_func(&apos;assert&apos;, &apos;phpinfo();&apos;);</td>
+</tr>
+<tr>
+<td>call_user_func_array</td>
+<td>&#x540C;call_user_func &#x53EF;&#x4F20;&#x5165;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x5E26;&#x5165;&#x591A;&#x4E2A;&#x53C2;&#x6570;&#x8C03;&#x7528;&#x51FD;&#x6570;</td>
+<td>call_user_func_array (&apos;file_put_contents&apos;, [&apos;1.txt&apos;,&apos;6666&apos;]);</td>
+</tr>
+<tr>
+<td>create_function</td>
+<td>&#x6839;&#x636E;&#x4F20;&#x9012;&#x7684;&#x53C2;&#x6570;&#x521B;&#x5EFA;&#x533F;&#x540D;&#x51FD;&#x6570;&#xFF0C;&#x5E76;&#x4E3A;&#x5176;&#x8FD4;&#x56DE;&#x552F;&#x4E00;&#x540D;&#x79F0; &#x5229;&#x7528;&#x9700;&#x8981;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x53EF;&#x63A7; &#x4E14;&#x521B;&#x5EFA;&#x7684;&#x51FD;&#x6570;&#x88AB;&#x6267;&#x884C;</td>
+<td>$f = create_function(&apos;&apos;,&apos;system($_GET[123]);&apos;); $f();</td>
+</tr>
+<tr>
+<td>include</td>
+<td>&#x5305;&#x542B;&#x5E76;&#x8FD0;&#x884C;&#x6307;&#x5B9A;&#x6587;&#x4EF6; &#x6267;&#x884C;&#x51FA;&#x9519;&#x4F1A;&#x629B;&#x51FA;&#x9519;&#x8BEF;</td>
+<td>include &apos;vars.php&apos;; (&#x62EC;&#x53F7;&#x53EF;&#x6709;&#x53EF;&#x65E0;)</td>
+</tr>
+<tr>
+<td>require</td>
+<td>&#x540C;include &#x6267;&#x884C;&#x51FA;&#x9519;&#x4F1A;&#x629B;&#x51FA;&#x8B66;&#x544A;</td>
+<td>require(&apos;somefile.php&apos;); (&#x62EC;&#x53F7;&#x53EF;&#x6709;&#x53EF;&#x65E0;)</td>
+</tr>
+<tr>
+<td>require_once</td>
+<td>&#x540C;require &#x4F46;&#x4F1A;&#x68C0;&#x67E5;&#x4E4B;&#x524D;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x5305;&#x542B;&#x8BE5;&#x6587;&#x4EF6; &#x786E;&#x4FDD;&#x4E0D;&#x91CD;&#x590D;&#x5305;&#x542B;</td>
+<td></td>
+</tr>
+<tr>
+<td>include_once</td>
+<td>&#x540C;include &#x4F46;&#x4F1A;&#x68C0;&#x67E5;&#x4E4B;&#x524D;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x5305;&#x542B;&#x8BE5;&#x6587;&#x4EF6; &#x786E;&#x4FDD;&#x4E0D;&#x91CD;&#x590D;&#x5305;&#x542B;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sqlldap&#x6CE8;&#x5165;">SQL/LDAP&#x6CE8;&#x5165;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x51FD;&#x6570;/&#x65B9;&#x6CD5;</th>
+<th>&#x5907;&#x6CE8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mysql_query</td>
+<td></td>
+</tr>
+<tr>
+<td>odbc_exec</td>
+<td></td>
+</tr>
+<tr>
+<td>mysqli_query</td>
+<td></td>
+</tr>
+<tr>
+<td>mysql_db_query</td>
+<td></td>
+</tr>
+<tr>
+<td>mysql_unbuffered_query</td>
+<td></td>
+</tr>
+<tr>
+<td><p>mysqli::query</p><p>&#x7528;&#x6CD5;</p><p>$mysqli = new mysqli(&quot;localhost&quot;, &quot;my_user&quot;, &quot;my_password&quot;, &quot;world&quot;);</p><p>$mysqli-&gt;query();</p></td>
+<td></td>
+</tr>
+<tr>
+<td>pg_query</td>
+<td></td>
+</tr>
+<tr>
+<td>pg_query_params</td>
+<td></td>
+</tr>
+<tr>
+<td>pg_send_query</td>
+<td></td>
+</tr>
+<tr>
+<td>pg_send_query_params</td>
+<td></td>
+</tr>
+<tr>
+<td>sqlsrv_query</td>
+<td></td>
+</tr>
+<tr>
+<td><p>pdo::query</p><p>$pdo=new PDO(&quot;mysql:host=localhost;dbname=phpdemo&quot;,&quot;root&quot;,&quot;1234&quot;); $pdo-&gt;query($sql);;</p></td>
+<td>PDO</td>
+</tr>
+<tr>
+<td><p>SQLite3::query</p><p>SQLite3::exec</p><p>$db = new SQLite3(&apos;mysqlitedb.db&apos;); $db-&gt;query(&apos;SELECT bar FROM foo&apos;); $db-&gt;exec(&apos;CREATE TABLE bar (bar STRING)&apos;);</p></td>
+<td></td>
+</tr>
+<tr>
+<td>$mongo = new mongoclient(); $data = $coll-&gt;find($data);</td>
+<td><a href="https://wooyun.js.org/drops/Mongodb%E6%B3%A8%E5%85%A5%E6%94%BB%E5%87%BB.html" target="_blank">https://wooyun.js.org/drops/Mongodb%E6%B3%A8%E5%85%A5%E6%94%BB%E5%87%BB.html</a></td>
+</tr>
+<tr>
+<td>$ld = ldap_connect(&quot;localhost&quot;);&#x2026;. $lb = @ldap_bind($ld, &quot;cn=test,dc=test,dc=com&quot;, &quot;test&quot;);</td>
+<td><a href="https://www.cnblogs.com/0nc3/p/12063436.html" target="_blank">https://www.cnblogs.com/0nc3/p/12063436.html</a></td>
+</tr>
+<tr>
+<td>Db::query</td>
+<td>Thinkphp</td>
+</tr>
+<tr>
+<td>Db::execute</td>
+<td>Thinkphp</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x6587;&#x4EF6;&#x8BFB;&#x53D6;ssrf">&#x6587;&#x4EF6;&#x8BFB;&#x53D6;/SSRF</h2>
+<table>
+<thead>
+<tr>
+<th>&#x51FD;&#x6570;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>&#x4F8B;&#x5B50;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>file_get_contents</td>
+<td>&#x8BFB;&#x5165;&#x6587;&#x4EF6;&#x8FD4;&#x56DE;&#x5B57;&#x7B26;&#x4E32;</td>
+<td>echo file_get_contents(&quot;flag.txt&quot;); echo file_get_contents(&quot;<a href="https://www.bilibili.com/" target="_blank">https://www.bilibili.com/</a>&quot;);</td>
+</tr>
+<tr>
+<td>curl_setopt curl_exec</td>
+<td>Curl&#x8BBF;&#x95EE;url&#x83B7;&#x53D6;&#x4FE1;&#x606F;</td>
+<td>function curl($url){ $ch = curl_init(); curl_setopt($ch, CURLOPT_URL, $url); curl_exec($ch); curl_close($ch); } $url = $_GET[&apos;url&apos;]; curl($url); <a href="https://www.php.net/manual/zh/function.curl-exec.php" target="_blank">https://www.php.net/manual/zh/function.curl-exec.php</a></td>
+</tr>
+<tr>
+<td>fsockopen</td>
+<td>&#x6253;&#x5F00;&#x4E00;&#x4E2A;&#x5957;&#x63A5;&#x5B57;&#x8FDE;&#x63A5;(&#x8FDC;&#x7A0B; tcp/udp raw)</td>
+<td><a href="https://www.php.net/manual/zh/function.fsockopen.php" target="_blank">https://www.php.net/manual/zh/function.fsockopen.php</a></td>
+</tr>
+<tr>
+<td>readfile</td>
+<td>&#x8BFB;&#x53D6;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x5199;&#x5165;&#x5230;&#x8F93;&#x51FA;&#x7F13;&#x51B2;</td>
+<td>&#x540C;file_get_contents</td>
+</tr>
+<tr>
+<td>fopen/fread/fgets/fgetss /fgetc/fgetcsv/fpassthru/fscanf</td>
+<td>&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x6216;&#x8005; URL &#x8BFB;&#x53D6;&#x6587;&#x4EF6;&#x6D41;</td>
+<td>$file = fopen(&quot;test.txt&quot;,&quot;r&quot;); echo fread($file,&quot;1234&quot;); fclose($file);</td>
+</tr>
+<tr>
+<td>file</td>
+<td>&#x628A;&#x6574;&#x4E2A;&#x6587;&#x4EF6;&#x8BFB;&#x5165;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x4E2D;</td>
+<td>echo implode(&apos;&apos;, file(&apos;<a href="https://www.bilibili.com/" target="_blank">https://www.bilibili.com/</a>&apos;));</td>
+</tr>
+<tr>
+<td>highlight_file/show_source</td>
+<td>&#x8BED;&#x6CD5;&#x9AD8;&#x4EAE;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;</td>
+<td>highlight_file(&quot;1.php&quot;);</td>
+</tr>
+<tr>
+<td>parse_ini_file</td>
+<td>&#x8BFB;&#x53D6;&#x5E76;&#x89E3;&#x6790;&#x4E00;&#x4E2A;ini&#x914D;&#x7F6E;&#x6587;&#x4EF6;</td>
+<td>print_r(parse_ini_file(&apos;1.ini&apos;));</td>
+</tr>
+<tr>
+<td>simplexml_load_file</td>
+<td>&#x8BFB;&#x53D6;&#x6587;&#x4EF6;&#x4F5C;&#x4E3A;XML&#x6587;&#x6863;&#x89E3;&#x6790;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x5199;&#x5165;&#x5176;&#x4ED6;">&#x6587;&#x4EF6;&#x4E0A;&#x4F20;/&#x5199;&#x5165;/&#x5176;&#x4ED6;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x51FD;&#x6570;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>&#x4F8B;&#x5B50;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>file_put_contents</td>
+<td>&#x5C06;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x5199;&#x5165;&#x6587;&#x4EF6;</td>
+<td>file_put_contents(&quot;1.txt&quot;,&quot;6666&quot;);</td>
+</tr>
+<tr>
+<td>move_uploaded_file</td>
+<td>&#x5C06;&#x4E0A;&#x4F20;&#x7684;&#x4E34;&#x65F6;&#x6587;&#x4EF6;&#x79FB;&#x52A8;&#x5230;&#x65B0;&#x7684;&#x4F4D;&#x7F6E;</td>
+<td>move_uploaded_file($_FILES[&quot;pictures&quot;][&quot;tmp_name&quot;],&quot;1.php&quot;)</td>
+</tr>
+<tr>
+<td>rename</td>
+<td>&#x91CD;&#x547D;&#x540D;&#x6587;&#x4EF6;/&#x76EE;&#x5F55;</td>
+<td>rename($oldname, $newname);</td>
+</tr>
+<tr>
+<td>rmdir</td>
+<td>&#x5220;&#x9664;&#x76EE;&#x5F55;</td>
+<td></td>
+</tr>
+<tr>
+<td>mkdir</td>
+<td>&#x521B;&#x5EFA;&#x76EE;&#x5F55;</td>
+<td></td>
+</tr>
+<tr>
+<td>unlink</td>
+<td>&#x5220;&#x9664;&#x6587;&#x4EF6;</td>
+<td></td>
+</tr>
+<tr>
+<td>copy</td>
+<td>&#x590D;&#x5236;&#x6587;&#x4EF6;</td>
+<td>copy($file, $newfile);</td>
+</tr>
+<tr>
+<td>fopen/fputs/fwrite</td>
+<td>&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x6216;&#x8005; URL</td>
+<td><a href="https://www.php.net/manual/zh/function.fwrite.php" target="_blank">https://www.php.net/manual/zh/function.fwrite.php</a></td>
+</tr>
+<tr>
+<td>link</td>
+<td>&#x521B;&#x5EFA;&#x6587;&#x4EF6;&#x786C;&#x94FE;&#x63A5;</td>
+<td>link($target, $link);</td>
+</tr>
+<tr>
+<td>symlink</td>
+<td>&#x521B;&#x5EFA;&#x7B26;&#x53F7;&#x94FE;&#x63A5;(&#x8F6F;&#x94FE;&#x63A5;)</td>
+<td>symlink($target, $link);</td>
+</tr>
+<tr>
+<td>tmpfile</td>
+<td>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x4E34;&#x65F6;&#x6587;&#x4EF6; (&#x5728;&#x4E34;&#x65F6;&#x76EE;&#x5F55;&#x5B58;&#x653E; &#x968F;&#x673A;&#x6587;&#x4EF6;&#x540D; &#x8FD4;&#x56DE;&#x53E5;&#x67C4;)</td>
+<td>$temp = tmpfile(); fwrite($temp, &quot;123456&quot;); fclose($temp);</td>
+</tr>
+<tr>
+<td><p>request()-&gt;file()-&gt;move()</p><p>request()-&gt;file()-&gt;file()</p></td>
+<td><strong>**[</strong>Thinkphp &#x6587;&#x4EF6;&#x4E0A;&#x4F20;<strong>](<a href="https://www.kancloud.cn/manual/thinkphp5/155159)**" target="_blank">https://www.kancloud.cn/manual/thinkphp5/155159)**</a></strong></td>
+<td><p>$file = request()-&gt;file($name);</p><p>$file-&gt;move($filepath);</p></td>
+</tr>
+<tr>
+<td>extractTo</td>
+<td>&#x89E3;&#x538B;ZIP&#x5230;&#x76EE;&#x5F55;</td>
+<td></td>
+</tr>
+<tr>
+<td>DOMDocument loadXML simplexml_import_dom</td>
+<td>&#x52A0;&#x8F7D;&#x89E3;&#x6790;XML &#x6709;&#x53EF;&#x80FD;&#x5B58;&#x5728;XXEE &#x6F0F;&#x6D1E; file_get_contents&#x83B7;&#x53D6;&#x5BA2;&#x6237;&#x7AEF;&#x8F93;&#x5165;&#x5185;&#x5BB9; new DOMDocument()&#x521D;&#x59CB;&#x5316;XML&#x89E3;&#x6790;&#x5668; loadXML($xmlfile)&#x52A0;&#x8F7D;&#x5BA2;&#x6237;&#x7AEF;&#x8F93;&#x5165;&#x7684;XML&#x5185;&#x5BB9; simplexml_import_dom($dom)&#x83B7;&#x53D6;XML&#x6587;&#x6863;&#x8282;&#x70B9;&#xFF0C;&#x5982;&#x679C;&#x6210;&#x529F;&#x5219;&#x8FD4;&#x56DE;SimpleXMLElement&#x5BF9;&#x8C61;&#xFF0C;&#x5982;&#x679C;&#x5931;&#x8D25;&#x5219;&#x8FD4;&#x56DE;FALSE&#x3002;</td>
+<td>\&lt;?php $xmlfile=file_get_contents(&apos;php://input&apos;); $dom=new DOMDocument(); $dom-&gt;loadXML($xmlfile); $xml=simplexml_import_dom($dom); $xxe=$xml-&gt;xxe; $str=&quot;$xxe \n&quot;; echo $str; ?&gt; <em>&#x6765;&#x81EA; &lt;</em><a href="https://xz.aliyun.com/t/6887" target="_blank"><em>https://xz.aliyun.com/t/6887</em></a><em>&gt;</em></td>
+</tr>
+<tr>
+<td>simplexml_load_string</td>
+<td>&#x52A0;&#x8F7D;&#x89E3;&#x6790;XML&#x5B57;&#x7B26;&#x4E32; &#x6709;&#x53EF;&#x80FD;&#x5B58;&#x5728;XXE &#x6F0F;&#x6D1E;</td>
+<td>$xml=simplexml_load_string($_REQUEST[&apos;xml&apos;]); print_r($xml);</td>
+</tr>
+<tr>
+<td>simplexml_load_file</td>
+<td>&#x8BFB;&#x53D6;&#x6587;&#x4EF6;&#x4F5C;&#x4E3A;XML&#x6587;&#x6863;&#x89E3;&#x6790; &#x6709;&#x53EF;&#x80FD;&#x5B58;&#x5728;XXE &#x6F0F;&#x6D1E;</td>
+<td></td>
+</tr>
+<tr>
+<td>unserialize</td>
+<td>&#x53CD;&#x5E8F;&#x5217;&#x5316;</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="yong-hu-ke-kong-shu-ru-su-cha-biao.html" class="navigation navigation-prev " aria-label="Previous page: 💉 PHP用户可控输入速查表">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="php-yuan-sheng-guo-lv-han-shu.html" class="navigation navigation-next " aria-label="Next page: 🩹 PHP原生过滤方法">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"🧬 PHP敏感函数速查表","level":"2.5","depth":1,"next":{"title":"🩹 PHP原生过滤方法","level":"2.6","depth":1,"path":"php-shen-ji-ji-chu/php-yuan-sheng-guo-lv-han-shu.md","ref":"php-shen-ji-ji-chu/php-yuan-sheng-guo-lv-han-shu.md","articles":[]},"previous":{"title":"💉 PHP用户可控输入速查表","level":"2.4","depth":1,"path":"php-shen-ji-ji-chu/yong-hu-ke-kong-shu-ru-su-cha-biao.md","ref":"php-shen-ji-ji-chu/yong-hu-ke-kong-shu-ru-su-cha-biao.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["hints"],"pluginsConfig":{"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"php-shen-ji-ji-chu/cui-ruo-han-shu-su-cha-biao.md","mtime":"2021-11-23T13:06:20.920Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-23T13:06:48.390Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

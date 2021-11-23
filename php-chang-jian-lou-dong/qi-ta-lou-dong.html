@@ -1,0 +1,678 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>其他漏洞 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="这里的漏洞列表与业务功能强相关 需要根据当前功能分析是否存在问题">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../php-chang-jian-kuang-jia/page-2.html" />
+    
+    
+    <link rel="prev" href="ldap-zhu-ru.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    PHP代码审计入门指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../xu-yan.html">
+            
+                <a href="../xu-yan.html">
+            
+                    
+                    序言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">PHP审计基础</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../php-shen-ji-ji-chu/gong-ju-zhun-bei.html">
+            
+                <a href="../php-shen-ji-ji-chu/gong-ju-zhun-bei.html">
+            
+                    
+                    ⚒ 工具准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../php-shen-ji-ji-chu/vs-code-shen-ji-ji-qiao.html">
+            
+                <a href="../php-shen-ji-ji-chu/vs-code-shen-ji-ji-qiao.html">
+            
+                    
+                    VS CODE 常用快捷键
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../php-shen-ji-ji-chu/php-shen-ji-liu-cheng.html">
+            
+                <a href="../php-shen-ji-ji-chu/php-shen-ji-liu-cheng.html">
+            
+                    
+                    PHP代码审计思路
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../php-shen-ji-ji-chu/yong-hu-ke-kong-shu-ru-su-cha-biao.html">
+            
+                <a href="../php-shen-ji-ji-chu/yong-hu-ke-kong-shu-ru-su-cha-biao.html">
+            
+                    
+                    💉 PHP用户可控输入速查表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../php-shen-ji-ji-chu/cui-ruo-han-shu-su-cha-biao.html">
+            
+                <a href="../php-shen-ji-ji-chu/cui-ruo-han-shu-su-cha-biao.html">
+            
+                    
+                    🧬 PHP敏感函数速查表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../php-shen-ji-ji-chu/php-yuan-sheng-guo-lv-han-shu.html">
+            
+                <a href="../php-shen-ji-ji-chu/php-yuan-sheng-guo-lv-han-shu.html">
+            
+                    
+                    🩹 PHP原生过滤方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../php-shen-ji-ji-chu/php-dong-tai-tiao-shi-xdebug-an-zhuang-pei-zhi.html">
+            
+                <a href="../php-shen-ji-ji-chu/php-dong-tai-tiao-shi-xdebug-an-zhuang-pei-zhi.html">
+            
+                    
+                    PHP动态调试-Xdebug安装配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">PHP常见漏洞</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="page-11.html">
+            
+                <a href="page-11.html">
+            
+                    
+                    命令注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="dai-ma-zhu-ru.html">
+            
+                <a href="dai-ma-zhu-ru.html">
+            
+                    
+                    代码注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="wen-jian-bao-han.html">
+            
+                <a href="wen-jian-bao-han.html">
+            
+                    
+                    文件包含
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="sql-zhu-ru.html">
+            
+                <a href="sql-zhu-ru.html">
+            
+                    
+                    SQL注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="wen-jian-cao-zuo.html">
+            
+                <a href="wen-jian-cao-zuo.html">
+            
+                    
+                    文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="xss.html">
+            
+                <a href="xss.html">
+            
+                    
+                    XSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="ssrf.html">
+            
+                <a href="ssrf.html">
+            
+                    
+                    SSRF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="csrf.html">
+            
+                <a href="csrf.html">
+            
+                    
+                    CSRF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="xxe.html">
+            
+                <a href="xxe.html">
+            
+                    
+                    XXE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="fan-xu-lie-hua.html">
+            
+                <a href="fan-xu-lie-hua.html">
+            
+                    
+                    反序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="ldap-zhu-ru.html">
+            
+                <a href="ldap-zhu-ru.html">
+            
+                    
+                    LDAP注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.12" data-path="qi-ta-lou-dong.html">
+            
+                <a href="qi-ta-lou-dong.html">
+            
+                    
+                    其他漏洞
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">PHP常见框架</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../php-chang-jian-kuang-jia/page-2.html">
+            
+                <a href="../php-chang-jian-kuang-jia/page-2.html">
+            
+                    
+                    Thinkphp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../php-chang-jian-kuang-jia/laravel.html">
+            
+                <a href="../php-chang-jian-kuang-jia/laravel.html">
+            
+                    
+                    Laravel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../php-chang-jian-kuang-jia/codeigniter.html">
+            
+                <a href="../php-chang-jian-kuang-jia/codeigniter.html">
+            
+                    
+                    Codeigniter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../php-chang-jian-kuang-jia/yii.html">
+            
+                <a href="../php-chang-jian-kuang-jia/yii.html">
+            
+                    
+                    Yii
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../php-chang-jian-kuang-jia/cakephp.html">
+            
+                <a href="../php-chang-jian-kuang-jia/cakephp.html">
+            
+                    
+                    Cakephp
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">PHP审计实例</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../php-shen-ji-shi-li/page-12.html">
+            
+                <a href="../php-shen-ji-shi-li/page-12.html">
+            
+                    
+                    -
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">附录</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../fu-lu/php-ruo-lei-xing.html">
+            
+                <a href="../fu-lu/php-ruo-lei-xing.html">
+            
+                    
+                    PHP弱类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../zong-jie.html">
+            
+                <a href="../zong-jie.html">
+            
+                    
+                    🎉 总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../can-kao.html">
+            
+                <a href="../can-kao.html">
+            
+                    
+                    🔗 参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >其他漏洞</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5176;&#x4ED6;&#x6F0F;&#x6D1E;">&#x5176;&#x4ED6;&#x6F0F;&#x6D1E;</h1>
+<h2 id="&#x8981;&#x6BD4;&#x4EA7;&#x54C1;&#x66F4;&#x61C2;&#x4E1A;&#x52A1;">&#x8981;&#x6BD4;&#x4EA7;&#x54C1;&#x66F4;&#x61C2;&#x4E1A;&#x52A1;</h2>
+<p>&#x4E1A;&#x52A1;&#x76F8;&#x5173;&#x6F0F;&#x6D1E;&#x662F;&#x975E;&#x5E38;&#x7075;&#x6D3B;&#x7684;&#x4E00;&#x7C7B;&#x6F0F;&#x6D1E;</p>
+<p>&#x5728;&#x5B9E;&#x9645;&#x6F0F;&#x6D1E;&#x6316;&#x6398;&#x8FC7;&#x7A0B;&#x4E2D;&#x6162;&#x6162;&#x5B66;&#x4E60; &#x4E0D;&#x8981;&#x53D7;&#x6240;&#x5B66;&#x5185;&#x5BB9;&#x7684;&#x9650;&#x5236; &#x5927;&#x80C6;&#x7684;&#x5C1D;&#x8BD5; &#x53EF;&#x80FD;&#x4F1A;&#x53D1;&#x73B0;&#x4E00;&#x4E9B;&#x610F;&#x60F3;&#x4E0D;&#x5230;&#x7684;&#x6F0F;&#x6D1E;</p>
+<ul>
+<li>&#x591A;&#x6316;&#x6316;&#x4E92;&#x8054;&#x7F51;&#x5927;&#x5382;SRC&#x5E73;&#x53F0;&#x7684;&#x4E1A;&#x52A1;&#x6F0F;&#x6D1E; &#x5728;&#x6316;&#x6398;&#x8FBE;&#x5230;&#x4E00;&#x5B9A;&#x6570;&#x91CF;&#x540E; &#x76F8;&#x4FE1;&#x4F60;&#x4F1A;&#x4E1A;&#x52A1;&#x6F0F;&#x6D1E;&#x4F1A;&#x6709;&#x66F4;&#x6DF1;&#x7684;&#x7406;&#x89E3;</li>
+</ul>
+<h2 id="&#x8D8A;&#x6743;&#x6F0F;&#x6D1E;">&#x8D8A;&#x6743;&#x6F0F;&#x6D1E;</h2>
+<p>&#x8D8A;&#x6743;&#x662F;&#x6307;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x8D85;&#x51FA;&#x4E1A;&#x52A1;&#x8BBE;&#x8BA1;&#x4E0A;&#x7684;&#x6743;&#x9650;&#x9650;&#x5236;&#x7684;&#x8BBF;&#x95EE;/&#x64CD;&#x4F5C;</p>
+<p>&#x5E73;&#x884C;&#x8D8A;&#x6743;: &#x8BBF;&#x95EE;/&#x64CD;&#x4F5C;&#x4E0E;&#x5F53;&#x524D;&#x7528;&#x6237;&#x540C;&#x7B49;&#x6743;&#x9650;&#x7684;&#x5176;&#x4ED6;&#x7528;&#x6237;&#x7684;&#x6570;&#x636E;</p>
+<p>&#x4F8B;:&#x666E;&#x901A;&#x7528;&#x6237;A&#x53EF;&#x4EE5;&#x5220;&#x9664;&#x666E;&#x901A;&#x7528;&#x6237;B&#x6295;&#x7A3F;&#x7684;&#x6587;&#x7AE0; &#x4ECE;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x8BBE;&#x8BA1;&#x4E0A;&#x7528;&#x6237;A&#x53EA;&#x80FD;&#x5220;&#x9664;&#x81EA;&#x5DF1;&#x521B;&#x5EFA;&#x7684;&#x7A3F;&#x4EF6; &#x4F46;&#x662F;&#x5728;&#x540E;&#x7AEF;&#x672A;&#x505A;&#x76F8;&#x5E94;&#x7684;&#x9650;&#x5236;</p>
+<p>&#x5782;&#x76F4;&#x8D8A;&#x6743;: &#x8BBF;&#x95EE;/&#x64CD;&#x4F5C;&#x4E0E;&#x5F53;&#x524D;&#x7528;&#x6237;&#x672A;&#x62E5;&#x6709;&#x6743;&#x9650;&#x7684;&#x6570;&#x636E;</p>
+<p>&#x4F8B;:&#x65E5;&#x5FD7;&#x5BA1;&#x8BA1;&#x7BA1;&#x7406;&#x5458; &#x8BBE;&#x8BA1;&#x4E0A;&#x53EF;&#x4EE5;&#x5BA1;&#x8BA1;&#x670D;&#x52A1;&#x5668;&#x65E5;&#x5FD7; &#x4F46;&#x4E0D;&#x80FD;&#x8FDB;&#x884C;&#x5176;&#x4ED6;&#x64CD;&#x4F5C; &#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#x5458;&#x53EF;&#x4EE5;&#x8FDB;&#x884C; &#x7CFB;&#x7EDF;&#x914D;&#x7F6E; &#x7BA1;&#x7406;&#x8D26;&#x53F7;&#x7B49;&#x64CD;&#x4F5C;</p>
+<p>&#x5982;&#x679C;&#x4F7F;&#x7528;&#x65E5;&#x5FD7;&#x5BA1;&#x8BA1;&#x7BA1;&#x7406;&#x5458;&#x8D26;&#x53F7;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#x5458;&#x7684;&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;&#x64CD;&#x4F5C; &#x8FD9;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x5782;&#x76F4;&#x8D8A;&#x6743;</p>
+<p>&#x8D8A;&#x6743;&#x6F0F;&#x6D1E;&#x975E;&#x5E38;&#x7075;&#x6D3B; &#x5177;&#x4F53;&#x7EC6;&#x8282;&#x8981;&#x7ED3;&#x5408;&#x4E1A;&#x52A1;&#x529F;&#x80FD;&#x8FDB;&#x884C;&#x5224;&#x65AD;&#x662F;&#x5426;&#x5B58;&#x5728;&#x95EE;&#x9898;</p>
+<h3 id="&#x672A;&#x6388;&#x6743;&#x8BBF;&#x95EE;&#x65E0;&#x9274;&#x6743;&#x9274;&#x6743;&#x7ED5;&#x8FC7;">&#x672A;&#x6388;&#x6743;&#x8BBF;&#x95EE;/&#x65E0;&#x9274;&#x6743;/&#x9274;&#x6743;&#x7ED5;&#x8FC7;</h3>
+<p>&#x8BBF;&#x95EE;/&#x64CD;&#x4F5C;&#x4E1A;&#x52A1;&#x524D;&#x672A;&#x8FDB;&#x884C;&#x6743;&#x9650;&#x68C0;&#x67E5; &#x6216;&#x6743;&#x9650;&#x68C0;&#x67E5;&#x4E0D;&#x4E25;&#x6613;&#x88AB;&#x7ED5;&#x8FC7;</p>
+<p>&#x6BD4;&#x5982;&#x4E0A;&#x6587;&#x7684;&#x8D8A;&#x6743;&#x6F0F;&#x6D1E;</p>
+<p>&#x5982;&#x679C;&#x7528;&#x6237;&#x672A;&#x8FDB;&#x884C;&#x767B;&#x9646;&#x64CD;&#x4F5C;&#x4ECD;&#x7136;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x540E;&#x53F0;&#x9875;&#x9762;&#x83B7;&#x53D6;&#x6570;&#x636E;/&#x8FDB;&#x884C;&#x540E;&#x53F0;&#x64CD;&#x4F5C; &#x8FD9;&#x5C31;&#x662F;&#x672A;&#x6388;&#x6743;&#x8BBF;&#x95EE;(&#x672A;&#x6388;&#x6743;&#x8BBF;&#x95EE;&gt;&gt;&#x5782;&#x76F4;&#x8D8A;&#x6743;)</p>
+<p>&#x6709;&#x4E9B;&#x540E;&#x53F0;&#x64CD;&#x4F5C;&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x6DFB;&#x52A0;&#x540E;&#x95E8; &#x91C7;&#x7528;&#x4E86;&#x5F31;&#x6821;&#x9A8C;(&#x786C;&#x7F16;&#x7801;token &#x4ECE;head&#x83B7;&#x53D6;&#x7684;UA&#x548C;IP&#x5730;&#x5740; &#x5F31;JWT&#x79D8;&#x94A5;&#x7B49;)&#x8FD9;&#x5C31;&#x53EF;&#x80FD;&#x9020;&#x6210;&#x9274;&#x6743;&#x7ED5;&#x8FC7;</p>
+<h3 id="&#x9891;&#x7387;&#x9650;&#x5236;">&#x9891;&#x7387;&#x9650;&#x5236;</h3>
+<p>&#x5728;&#x4E00;&#x4E9B;&#x5173;&#x952E;&#x4E1A;&#x52A1;&#x70B9;&#x5E94;&#x505A;&#x9891;&#x7387;&#x9650;&#x5236;</p>
+<p>&#x4F8B;&#x5982; &#x7528;&#x6237;&#x767B;&#x9646; &#x4F7F;&#x7528;ip/&#x7528;&#x6237;&#x540D;&#x9650;&#x5236;&#x5355;&#x4F4D;&#x65F6;&#x95F4;&#x5185;&#x767B;&#x9646;&#x6B21;&#x6570; &#x5FC5;&#x8981;&#x65F6;&#x589E;&#x52A0;&#x591A;&#x6B21;&#x5931;&#x8D25;&#x9501;&#x5B9A;&#x9650;&#x5236; (&#x53EF;&#x4EE5;&#x7528;&#x4F8B;&#x5982; memcache redis&#x7B49;&#x7F13;&#x5B58;&#x673A;&#x5236; &#x8BB0;&#x5F55;&#x6B21;&#x6570; &#x9650;&#x5236;&#x9891;&#x7387;)&#x914D;&#x5408;&#x9A8C;&#x8BC1;&#x7801;&#x8FDB;&#x884C;&#x9650;&#x5236; &#x9632;&#x6B62;&#x8D26;&#x53F7;&#x5BC6;&#x7801;&#x7206;&#x7834;</p>
+<p>&#x7528;&#x6237;&#x56DE;&#x590D; &#x53D1;&#x8868;&#x6587;&#x7AE0; &#x8BA2;&#x9605;&#x5173;&#x6CE8;&#x529F;&#x80FD; &#x53D1;&#x8D77;&#x8BA2;&#x5355; &#x7B49; &#x4E5F;&#x5E94;&#x589E;&#x52A0;&#x9891;&#x7387;&#x548C;&#x6B21;&#x6570;&#x9650;&#x5236; &#x9632;&#x6B62;&#x5927;&#x91CF;&#x586B;&#x5145;&#x5783;&#x573E;&#x4FE1;&#x606F; &#x9891;&#x7387;&#x8FC7;&#x9AD8;&#x65F6;&#x589E;&#x52A0;&#x9A8C;&#x8BC1;&#x7801;&#x6821;&#x9A8C;</p>
+<p>&#x90AE;&#x7BB1;/&#x77ED;&#x4FE1;&#x9A8C;&#x8BC1;&#x7801; &#x52A0;&#x4E0A;&#x5355;&#x65E5;&#x6B21;&#x6570;&#x53CA;&#x9891;&#x7387;&#x9650;&#x5236; &#x5FC5;&#x8981;&#x65F6;&#x589E;&#x52A0;&#x9A8C;&#x8BC1;&#x7801;&#x6821;&#x9A8C;</p>
+<h1 id="">#</h1>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ldap-zhu-ru.html" class="navigation navigation-prev " aria-label="Previous page: LDAP注入">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../php-chang-jian-kuang-jia/page-2.html" class="navigation navigation-next " aria-label="Next page: Thinkphp">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"description":"这里的漏洞列表与业务功能强相关 需要根据当前功能分析是否存在问题","title":"其他漏洞","level":"3.12","depth":1,"next":{"title":"Thinkphp","level":"4.1","depth":1,"path":"php-chang-jian-kuang-jia/page-2.md","ref":"php-chang-jian-kuang-jia/page-2.md","articles":[]},"previous":{"title":"LDAP注入","level":"3.11","depth":1,"path":"php-chang-jian-lou-dong/ldap-zhu-ru.md","ref":"php-chang-jian-lou-dong/ldap-zhu-ru.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["hints"],"pluginsConfig":{"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"php-chang-jian-lou-dong/qi-ta-lou-dong.md","mtime":"2021-11-23T13:06:20.920Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-23T13:06:48.390Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
