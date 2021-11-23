@@ -2,13 +2,13 @@
 
 ## phpStudy+Xdebug+VSCode(Windows)
 
-![](<../.gitbook/assets/图片 (3).png>)
+![](<../.gitbook/assets/phpstudy.png>)
 
 查看目标调试站点的PHP版本 确定Xdebug插件版本 也可以查看PHPINFO判断版本 (需要安装对应PHP版本的Xdebug插件 更换PHP版本需要重新安装)
 
 [https://xdebug.org/download](https://xdebug.org/download) Xdebug插件官方下载地址
 
-![](<../.gitbook/assets/图片 (7).png>)
+![](<../.gitbook/assets/xdebugdownload.png>)
 
 选择对应版本下载 (不标TS的版本为NTS)
 
@@ -37,17 +37,17 @@ client\_port要与vscode配置一致
 
 
 
-![](<../.gitbook/assets/图片 (1).png>)
+![](<../.gitbook/assets/phpchajian.png>)
 
 安装完毕 添加调试器配置
 
-![](<../.gitbook/assets/图片 (5).png>)
+![](<../.gitbook/assets/tiaoshiqi.png>)
 
 修改为之前的端口
 
 添加断点(快捷键 F9)后开始调试
 
-![](../.gitbook/assets/图片.png)
+![](../.gitbook/assets/duandian.png)
 
 访问目标调试页面
 
@@ -55,7 +55,7 @@ client\_port要与vscode配置一致
 
 (注意 PHPSTUDY Apache环境默认有超时限制 超时返回 HTTP 500 - Internal Server Error 服务器内部错误)
 
-![](<../.gitbook/assets/图片 (10).png>)
+![](<../.gitbook/assets/debugtest.png>)
 
 Apache 超时配置 <mark style="color:red;">(TODO)</mark>
 
