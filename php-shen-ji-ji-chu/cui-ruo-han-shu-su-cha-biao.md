@@ -4,6 +4,8 @@
 PHP一些容易出现安全问题的函数方法
 {% endhint %}
 
+##
+
 ## 命令执行
 
 一些常见的可以执行系统命令的函数/语法
@@ -24,7 +26,7 @@ PHP一些容易出现安全问题的函数方法
 | ----------------------- | ---------------------------------------------- | ------------------------------------------------------------------- |
 | eval                    | 将传入的参数内容作为PHP代码执行 eval 不是函数 是一种语法结构 不能当做函数动态调用 | eval('phpinfo();');                                                 |
 | assert                  | 将传入的参数内容作为PHP代码执行 版本在PHP7以下是函数 PHP7及以上为语法结构    | assert('phpinfo();');                                               |
-| preg\_replace           | 当preg\_replace使用/e修饰符且原字符串可控时时 有可能执行php代码      | echo preg\_replace("/e","{${PHPINFO()}}","123");                    |
+| preg\_replace           | 当preg\_replace使用/e修饰符且原字符串可控时时 有可能执行php代码      | echo preg\_replace("/e","{${PHPINFO()\}}","123");                   |
 | call\_user\_func        | 把第一个参数作为回调函数调用 需要两个参数都完全可控才可利用 只能传入一个参数调用      | call\_user\_func('assert', 'phpinfo();');                           |
 | call\_user\_func\_array | 同call\_user\_func 可传入一个数组带入多个参数调用函数            | call\_user\_func\_array ('file\_put\_contents', \['1.txt','6666']); |
 | create\_function        | 根据传递的参数创建匿名函数，并为其返回唯一名称 利用需要第二个参数可控 且创建的函数被执行  | $f = create\_function('','system($\_GET\[123]);'); $f();            |

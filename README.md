@@ -1,8 +1,16 @@
 # PHP代码审计入门指南
 
+## ****[**后续文章更新已移动到语雀** ](https://www.yuque.com/burpheart/phpaudit/readme)****
+
 ### 作者
 
 白帽酱 (橙子酱)(i@rce.moe)
+
+
+
+
+
+
 
 ### 简介
 

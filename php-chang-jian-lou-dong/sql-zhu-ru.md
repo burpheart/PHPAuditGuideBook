@@ -23,7 +23,7 @@ if ($result->num_rows > 0) {
 
 正常请求 ?id=123
 
-执行SQL 
+执行SQL&#x20;
 
 ```
 SELECT id, name FROM users WHERE id=123;
@@ -43,13 +43,13 @@ SELECT id, name FROM users WHERE id=123 UNION SELECT name,password FROM users;
 
 ### 常见过滤/防护
 
-**addslashes **_在单引号（'）、双引号（"）、反斜线（\）与 NUL前加上反斜线_ **可用于防止SQL注入**
+**addslashes** _在单引号（'）、双引号（"）、反斜线（\）与 NUL前加上反斜线_ **可用于防止SQL注入**
 
-**mysqli::real_escape_string mysqli::escape_string mysqli_real_escape_string mysql_real_escape_string SQLite3::escapeString **
+**mysqli::real\_escape\_string mysqli::escape\_string mysqli\_real\_escape\_string mysql\_real\_escape\_string SQLite3::escapeString**&#x20;
 
 **以上函数会在\x00(NULL), \n, \r, , ', " 和 \x1a (CTRL-Z)**_**前加上反斜线**_**  并考虑了当前数据库连接字符集进行处理**
 
-注意: <mark style="color:red;"></mark><mark style="color:red;">**经过以上函数处理后的字符串不可直接用于sql查询拼接 需要使用引号包裹后拼接到sql语句中 否则仍可导致sql注入 **</mark>
+注意: <mark style="color:red;"></mark> <mark style="color:red;"></mark><mark style="color:red;">**经过以上函数处理后的字符串不可直接用于sql查询拼接 需要使用引号包裹后拼接到sql语句中 否则仍可导致sql注入**</mark>&#x20;
 
 <mark style="color:red;">**例如 上文中的例子 攻击者输入并没有使用到引号反斜线 逗号可使用其他方法绕过 仍可构成SQL注入**</mark>
 
@@ -74,7 +74,7 @@ $stmt->execute([$_GET['id']]);//简单的预处理 完整使用方法见PHP手�
 
 **PDO::prepare 预处理SQL语句 有效防止SQL注入 (推荐)**
 
-**intval($input) floatval() floatval() floor() (int)$input num+0** 
+**intval($input) floatval() floatval() floor() (int)$input num+0**&#x20;
 
 将输入强制转换为整数/浮点 用于整数/浮点类型的输入参数处理 可防止SQL注入
 
@@ -84,16 +84,16 @@ $stmt->execute([$_GET['id']]);//简单的预处理 完整使用方法见PHP手�
 
 | 函数/方法                                                                                                                                                              | 备注  |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --- |
-| mysql_query                                                                                                                                                        |     |
-| odbc_exec                                                                                                                                                          |     |
-| mysqli_query                                                                                                                                                       |     |
-| mysql_db_query                                                                                                                                                     |     |
-| mysql_unbuffered_query                                                                                                                                             |     |
+| mysql\_query                                                                                                                                                       |     |
+| odbc\_exec                                                                                                                                                         |     |
+| mysqli\_query                                                                                                                                                      |     |
+| mysql\_db\_query                                                                                                                                                   |     |
+| mysql\_unbuffered\_query                                                                                                                                           |     |
 | <p>mysqli::query</p><p>用法</p><p>$mysqli = new mysqli("localhost", "my_user", "my_password", "world");</p><p>$mysqli->query();</p>                                  |     |
-| pg_query                                                                                                                                                           |     |
-| pg_query_params                                                                                                                                                    |     |
-| pg_send_query                                                                                                                                                      |     |
-| pg_send_query_params                                                                                                                                               |     |
-| sqlsrv_query                                                                                                                                                       |     |
+| pg\_query                                                                                                                                                          |     |
+| pg\_query\_params                                                                                                                                                  |     |
+| pg\_send\_query                                                                                                                                                    |     |
+| pg\_send\_query\_params                                                                                                                                            |     |
+| sqlsrv\_query                                                                                                                                                      |     |
 | <p>pdo::query</p><p>$pdo=new PDO("mysql:host=localhost;dbname=phpdemo","root","1234"); $pdo->query($sql);</p>                                                      | PDO |
 | <p>SQLite3::query</p><p>SQLite3::exec</p><p>$db = new SQLite3('mysqlitedb.db'); $db->query('SELECT bar FROM foo'); $db->exec('CREATE TABLE bar (bar STRING)');</p> |     |

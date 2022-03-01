@@ -17,7 +17,7 @@ echo 'Hello '.$_GET['name'].'!';
 
 服务器返回 Hello cz!
 
-浏览器渲染纯文本 Hello cz! 
+浏览器渲染纯文本 Hello cz!&#x20;
 
 ```
 攻击者输入: ?name=<script type="text/javascript">alert('XSS!');</script>
@@ -27,7 +27,7 @@ echo 'Hello '.$_GET['name'].'!';
 
 此种漏洞比较明显 很容易分析问题的存在
 
-**审计时注意 PHP常使用 htmlspecialchars 和 htmlentities函数 转义用户的输入作为防护 **
+**审计时注意 PHP常使用 htmlspecialchars 和 htmlentities函数 转义用户的输入作为防护**&#x20;
 
 ### 储存型XSS
 
@@ -53,7 +53,7 @@ echo 'Hello '.$_GET['name'].'!';
 
 储存(反射)dom
 
-####  DOM型 XSS 只与浏览器前端DOM渲染有关 不做赘述
+#### &#x20;DOM型 XSS 只与浏览器前端DOM渲染有关 不做赘述
 
 ### 前端外部文件引用
 

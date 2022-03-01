@@ -14,13 +14,13 @@ _来自 <_[_https://www.php.net/manual/zh/function.escapeshellcmd.php_](https://
 
 __
 
-**addslashes **_在单引号（'）、双引号（"）、反斜线（\）与 NUL前加上反斜线_ **可用于防止SQL注入**
+**addslashes** _在单引号（'）、双引号（"）、反斜线（\）与 NUL前加上反斜线_ **可用于防止SQL注入**
 
-**mysqli::real\_escape\_string mysqli::escape\_string mysqli\_real\_escape\_string mysql\_real\_escape\_string SQLite3::escapeString **
+**mysqli::real\_escape\_string mysqli::escape\_string mysqli\_real\_escape\_string mysql\_real\_escape\_string SQLite3::escapeString**&#x20;
 
 **以上函数会在\x00(NULL), \n, \r, , ', " 和 \x1a (CTRL-Z)**_**前加上反斜线**_**  并考虑了当前数据库连接字符集进行处理**
 
-注意: <mark style="color:red;"></mark><mark style="color:red;">**经过以上函数处理后的字符串不可直接用于sql查询拼接 需要使用引号包裹后拼接到sql语句中 否则仍可导致sql注入 **</mark>
+注意: <mark style="color:red;"></mark> <mark style="color:red;"></mark><mark style="color:red;">**经过以上函数处理后的字符串不可直接用于sql查询拼接 需要使用引号包裹后拼接到sql语句中 否则仍可导致sql注入**</mark>&#x20;
 
 **PDO::quote 转义特殊字符 并添加引号**
 

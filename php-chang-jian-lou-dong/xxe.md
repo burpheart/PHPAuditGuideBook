@@ -14,7 +14,7 @@ XML外部实体是XML的一个特性 XML可以使用外部实体引用来包含�
 
 <mark style="color:red;">**libxml\_disable\_entity\_loader(true);  //禁用外部实体使用到的函数 参数为true时禁用**</mark>
 
-<mark style="color:red;">**注意: **</mark>php环境中libxml 版本>=2.9.0时外部实体默认禁用 (<mark style="color:red;">**PHP版本 >=8.0时 就开始使用>=2.9.0版本的libxml **</mark>且<mark style="color:red;">**libxml\_disable\_entity\_loader函数被完全废弃 使用该函数会抛出错误**</mark>)
+<mark style="color:red;">**注意:**</mark> php环境中libxml 版本>=2.9.0时外部实体默认禁用 (<mark style="color:red;">**PHP版本 >=8.0时 就开始使用>=2.9.0版本的libxml**</mark> 且<mark style="color:red;">**libxml\_disable\_entity\_loader函数被完全废弃 使用该函数会抛出错误**</mark>)
 
 漏洞常见处: 支付等回调api
 

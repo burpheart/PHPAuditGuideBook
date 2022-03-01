@@ -6,7 +6,7 @@ description: 跨站请求伪造
 
 ### 表单请求
 
-**攻击者使被害者的浏览器在用户不知情的情况下发起目标网站表单请求 **这些表单常常带有目标网站的用户cookies 可以以用户在目标网站的身份进行操作 (攻击者不能获取cookies)
+**攻击者使被害者的浏览器在用户不知情的情况下发起目标网站表单请求** 这些表单常常带有目标网站的用户cookies 可以以用户在目标网站的身份进行操作 (攻击者不能获取cookies)
 
 **检查鉴权后的操作是否添加token/Referrer校验 拒绝空Referrer**
 
@@ -34,7 +34,7 @@ description: 跨站请求伪造
 
 添加随机token 在表单/jsonp请求时附加token(非常有效)
 
-服务端检测 Referrer (<mark style="color:red;">**一定要拒绝空Referrer**</mark>** **html表单可以发起空referrer)(表单/静态资源引用/jsonp请求)
+服务端检测 Referrer (<mark style="color:red;">**一定要拒绝空Referrer**</mark>** ** html表单可以发起空referrer)(表单/静态资源引用/jsonp请求)
 
 如果使用正则匹配一定要检查正则是否可以被绕过
 
